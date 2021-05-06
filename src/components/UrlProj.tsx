@@ -14,7 +14,7 @@ const UrlProj: React.FC = () => {
          <div className="title">URL</div>
          <div className="subtitle">URL IS LINKING</div>
 
-{/* this is to create text area where the desired url for access by the user  is entered. I added a place holder that will be replaced by the url on input */}
+{/* this area is where the user eneters the url of their choice it is given as "connect url". */}
         <div className="field">
             <label className="label">Connect Url</label>
             <div className="control">
@@ -22,7 +22,7 @@ const UrlProj: React.FC = () => {
             </div>
         </div>
         <div>
-            {/* this line is to generate the qr code which will access the specified url on input. the size and colour  of the qr code is also specified */}
+            {/* this line is to create the qr code which will link the url once it is given . the qualites of the qr code are also stated */}
                 <QRCode value={url} size={256} fgColor="purple" />
           </div>
          </div>

@@ -24,7 +24,7 @@ const UserSms: React.FC = () => {
             <div className="title">SMS</div>
             <div className="subtitle">SMS IS WORKING</div>
 
-            {/*  the lines 28-33 is where the users phone number is entered. the place holder "enter phone" will be replaced by the users phone number on input */}
+            {/*  the lines 28-33 will create where the users phone number will be entered.  */}
             <div className="field">
                 <div className="label">User's number</div>
                 <div className="control">
@@ -32,7 +32,7 @@ const UserSms: React.FC = () => {
                 </div>
             </div>
             
-            {/*this is to create text area "message" where the message to be sent is entered. I added a place holder that will be replaced by the actual message on input*/}
+            {/*the lines 36-40 will create the text area where the message will be inputed. */}
             <div className="field">
                 <div className="label">Message</div>
                 <div className="control">
@@ -42,7 +42,7 @@ const UserSms: React.FC = () => {
 
                 
             <div>
-                {/* this line is to generate the qr code which will send  a written message to the specified phone nuber. the size of the qr code is also specified */}
+                {/* this line is to generate the qr code which will send  a message to the given phone nuber. the qualites of the qr code are also stated*/}
                 <QRCode value={`SMS:${number}:${message}`} size={256}  fgColor={"pink"}/>
             </div>
         </div >

@@ -5,6 +5,7 @@ import './App.css';
 //import HelloWorld8 from './components/HelloWorld8';
 import UserSms from './components/UserSms';
 import UrlProj from './components/UrlProj';
+import EmailProj from './components/EmailProj';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,9 @@ const App: React.FC = () => {
       </div>
         <div className="Column2">
           <UrlProj />
+        </div>
+        <div className="Column3">
+          <EmailProj />
         </div>
       </div>
   );
