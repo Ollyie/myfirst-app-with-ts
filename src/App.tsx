@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+//import HelloWorld4 from './components/HelloWorld4';
+//import HelloWorld7 from './components/helloworld7/HelloWorld7';
+//import HelloWorld8 from './components/HelloWorld8';
+import UserSms from './components/UserSms';
+import UrlProj from './components/UrlProj';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="Container">
+      <div className="Column1">
+        <UserSms />
+      </div>
+        <div className="Column2">
+          <UrlProj />
+        </div>
+      </div>
   );
 }
-
 export default App;

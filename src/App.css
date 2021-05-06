@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(69, 209, 190);
 }
 
 .App-link {
@@ -35,4 +35,29 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+
+.Container{
+ display: flex;
+}
+.Container > div {
+ border: 5px solid rgb(223, 38, 115);
+ padding: 10px;
+}
+.Column1, .Column2, .Column3 {
+ flex: 1;
+}
+.Column1 {
+ background-color: rgba(164, 52, 192, 0.932);
+}
+.Column2 {
+ background-color: rgba(55, 219, 219, 0.863);
+}
+.Column3 {
+ background-color: rgb(231, 159, 222);
+}
+@media (max-width: 768px){
+ .Container{
+ flex-direction: column;
+ }
 }
